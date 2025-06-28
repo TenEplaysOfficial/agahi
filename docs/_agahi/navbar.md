@@ -1,0 +1,4 @@
+- [Home](#/README)
+- [Github](https://github.com/teneplaysofficial/agahi)
+- [NPM](https://www.npmjs.com/package/agahi)
+- [Contributors](https://github.com/TenEplaysOfficial/agahi/graphs/contributors)

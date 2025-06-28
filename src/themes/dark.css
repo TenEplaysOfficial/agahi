@@ -1,0 +1,30 @@
+:root {
+  /* Font Sizes */
+  --text-size-sm: 0.75rem;
+  --text-size-md: 1rem;
+  --text-size-lg: 1.25rem;
+
+  /* Spacing & Layout */
+  --space-vertical: 0.75rem 0;
+  --letter-spacing: 0.0625rem;
+  --border-radius: 0.3125rem;
+  --img-radius: 10px;
+  --header-height: 3.75rem;
+  --blur-radius: 1.5625rem;
+
+  /* Colors */
+  --background: #27272a;
+  --background-hover: #3f3f46;
+  --background-blur: rgba(40, 40, 43, 0.7);
+  --text-color: #e4e4e7;
+  --text-muted: #a1a1aa;
+  --text-strong: #f4f4f5;
+  --border-color: #3f3f46;
+  --border-color-strong: #52525b;
+  --link: #60a5fa;
+  --link-hover: #93c5fd;
+  --link-background: #1e40af;
+  --scrollbar-thumb: #52525b;
+  --scrollbar-track: #27272a;
+  --hamburger-color: #f4f4f5;
+}

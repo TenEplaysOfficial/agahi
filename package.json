@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "agahi",
+  "displayName": "Agahi",
+  "version": "1.0.0",
+  "description": "Client-side engine that renders Markdown files as a docs site in the browser—no build step.",
+  "keywords": [
+    "markdown",
+    "docs",
+    "client-side",
+    "no-build",
+    "static-site",
+    "documentation",
+    "md",
+    "agahi",
+    "spa"
+  ],
+  "license": "MIT",
+  "author": "Sriman",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TenEplaysOfficial/agahi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TenEplaysOfficial/agahi/issues"
+  },
+  "homepage": "https://TenEplaysOfficial.github.io/agahi",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "agahi": "dist/bin/cli.js"
+  },
+  "main": "dist/agahi.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "release": "release-it",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "npx eslint .",
+    "eslint:fix": "npx eslint . --fix",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,mjs,css,md,json,yml,html}": [
+      "yarn format"
+    ]
+  },
+  "dependencies": {
+    "commander": "^14.0.0",
+    "degit": "^2.8.4",
+    "dompurify": "^3.2.6",
+    "marked": "^15.0.12",
+    "ora": "^8.2.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "@release-it/conventional-changelog": "^10.0.1",
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.0.7",
+    "eslint": "^9.28.0",
+    "glob": "^11.0.2",
+    "globals": "^16.2.0",
+    "highlight.js": "^11.11.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^16.1.2",
+    "postcss": "^8.5.6",
+    "postcss-import": "^16.1.1",
+    "postcss-preset-env": "^10.2.4",
+    "prettier": "^3.5.3",
+    "release-it": "^19.0.3",
+    "rollup": "^4.41.1",
+    "rollup-plugin-delete": "^3.0.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-string": "^3.0.0"
+  }
+}

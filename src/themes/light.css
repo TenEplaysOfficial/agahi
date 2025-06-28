@@ -1,0 +1,30 @@
+:root {
+  /* Font Sizes */
+  --text-size-sm: 0.75rem;
+  --text-size-md: 1rem;
+  --text-size-lg: 1.25rem;
+
+  /* Spacing & Layout */
+  --space-vertical: 0.75rem 0;
+  --letter-spacing: 0.0625rem;
+  --border-radius: 0.3125rem;
+  --img-radius: 10px;
+  --header-height: 3.75rem;
+  --blur-radius: 1.5625rem;
+
+  /* Colors */
+  --background: #f9fafb;
+  --background-hover: #e5e7eb;
+  --background-blur: rgba(249, 250, 251, 0.7);
+  --text-color: #111827;
+  --text-muted: #6b7280;
+  --text-strong: #000000;
+  --border-color: #d1d5db;
+  --border-color-strong: #9ca3af;
+  --link: #2563eb;
+  --link-hover: #1d4ed8;
+  --link-background: #bfdbfe;
+  --scrollbar-thumb: #9ca3af;
+  --scrollbar-track: #f9fafb;
+  --hamburger-color: #27272a;
+}

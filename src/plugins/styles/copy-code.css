@@ -1,0 +1,41 @@
+.copy-code {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-color);
+  background-color: var(--background-hover);
+  border: 1px solid var(--border-color);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+
+/* Show on hover (desktop) */
+@media (hover: hover) {
+  pre:hover .copy-code {
+    opacity: 1;
+  }
+}
+
+/* Always show on mobile */
+@media (hover: none) and (pointer: coarse) {
+  .copy-code {
+    opacity: 1;
+  }
+}
+
+.copy-code:active,
+.copy-code:focus {
+  outline: none;
+  color: #fff;
+}
+
+.copy-code:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
